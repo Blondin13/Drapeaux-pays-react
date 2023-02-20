@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/Skateboarding-Club.otf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2";
+
+$color-1: #61dafb;
+$color-2: salmon;
+$color-3: #282c34;
+$white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(158, 151, 151);
+  font-family: $font-2;
+  letter-spacing: 1.5px;
+  // @include verticalCenter;
+}
+
+.li-nav{
+  font-size: 25px;
+  text-shadow: 1px 2px 3px black;
+}
+
+.p-about{
+  font-size: 20px;
+  padding: 30px;
+  text-shadow: 1px 1px 3px white !important;
+}
+
+li {
+  list-style-type: none;
+}
